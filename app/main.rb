@@ -1,5 +1,7 @@
 require 'json'
 
+# Test comment
+
 if ARGV.length < 2
   puts "Usage: your_bittorrent.sh <command> <args>"
   exit(1)
