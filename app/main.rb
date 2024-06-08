@@ -1,6 +1,6 @@
 require 'json'
 
-# Test comment
+# asdasd
 
 if ARGV.length < 2
   puts "Usage: your_bittorrent.sh <command> <args>"
