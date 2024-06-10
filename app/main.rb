@@ -14,6 +14,9 @@ def decode_bencode(bencoded_value)
       raise ArgumentError, "Invalid encoded value"
     end
     return bencoded_value[first_colon+1..-1]
+  elsif bencoded_value.match?(/\A\i\-?\d+e\z/)
+
+    return bencoded_value[1..].to_i
   else
     puts "Only strings are supported at the moment"
     exit(1)
